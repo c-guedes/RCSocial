@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.BottomNavigationView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/bottom_navigation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:background="@color/corPadrao"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
     android:layout_gravity="bottom"
-    android:background="#162A45"
-    app:menu="@menu/bottom_navi"
-    >
+    app:menu="@menu/bottom_navi">
 
 </android.support.design.widget.BottomNavigationView>

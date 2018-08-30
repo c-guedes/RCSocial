@@ -21,4 +21,8 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_faz_cadastro">faz_cadastro</string>
     <string name="title_activity_alimentacao_escolar">AlimentacaoEscolar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_faz_audit">FazAudit</string>
 </resources>

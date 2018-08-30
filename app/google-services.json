@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903028507012",
+    "firebase_url": "https://rcsocial-4bdf5.firebaseio.com",
+    "project_id": "rcsocial-4bdf5",
+    "storage_bucket": "rcsocial-4bdf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903028507012:android:7029f44d3fec6785",
+        "android_client_info": {
+          "package_name": "caique.rcsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903028507012-sti31rqe5b9uouc70iv2u6cngqop4fhf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "caique.rcsocial",
+            "certificate_hash": "d245570646a3f7f4eb3cb5e1e9777fd3ff38ae72"
+          }
+        },
+        {
+          "client_id": "903028507012-2h6gefl02m1nhu4oqo0mmgc7rddgg8lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJIksAfdAN7uVUNQmP1-BfCDUrWRxj0zE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903028507012-2h6gefl02m1nhu4oqo0mmgc7rddgg8lt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

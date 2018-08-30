@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">RCSocial</string>
+    <string name="title_activity_log">log</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="kk">Outro</string>
+    <string name="alimenta">Alimentação\n       Escolar</string>
+    <string name="title_activity_esqueci_senha">esqueci_senha</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_faz_cadastro">faz_cadastro</string>
+    <string name="title_activity_alimentacao_escolar">AlimentacaoEscolar</string>
+</resources>

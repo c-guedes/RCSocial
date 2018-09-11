@@ -13,9 +13,8 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
-public class esqueci_senha extends Activity {
+public class EsqueciSenha extends Activity {
     private FirebaseAuth mAuth;
     public Button voltar,btn_recuperar;
 
@@ -57,7 +56,7 @@ public class esqueci_senha extends Activity {
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(esqueci_senha.this, logi.class);
+                Intent toy = new Intent(EsqueciSenha.this, Login.class);
                 finish();
                 startActivity(toy);
             }

@@ -1,7 +1,6 @@
 package caique.rcsocial;
 
 import android.content.Intent;
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -16,9 +15,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-public class logi extends AppCompatActivity {
+public class Login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -61,7 +59,7 @@ public class logi extends AppCompatActivity {
                 barraDeProgresso.setVisibility(View.GONE);
                 if(task.isSuccessful()){
                     Toast.makeText(getApplicationContext(),"Bem vindo!", Toast.LENGTH_SHORT).show();
-                    Intent toy = new Intent(logi.this, AlimentacaoEscolar.class);
+                    Intent toy = new Intent(Login.this, AlimentacaoEscolar.class);
                     toy.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(toy);
                 }else{
@@ -103,7 +101,7 @@ public class logi extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Intent toy = new Intent(logi.this, esqueci_senha.class);
+                Intent toy = new Intent(Login.this, EsqueciSenha.class);
                 startActivity(toy);
             }
 
@@ -113,7 +111,7 @@ public class logi extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                Intent toy = new Intent(logi.this, cadastrar.class);
+                Intent toy = new Intent(Login.this, PrimeiroCadastro.class);
                 startActivity(toy);
             }
 

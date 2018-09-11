@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -14,30 +15,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".RCSocial">
+        <activity android:name=".HomePadrao">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".logi" />
+        <activity android:name=".Login" />
         <activity
-            android:name=".esqueci_senha"
+            android:name=".EsqueciSenha"
             android:label="@string/title_activity_esqueci_senha" />
-        <activity android:name=".cadastrar" />
+        <activity android:name=".PrimeiroCadastro" />
         <activity
-            android:name=".faz_cadastro"
+            android:name=".FazCadastro"
             android:label="@string/title_activity_faz_cadastro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AlimentacaoEscolar"
             android:label="@string/title_activity_alimentacao_escolar"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".FazAudit"
-            android:label="@string/title_activity_faz_audit"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -4,30 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".faz_cadastro"
+    tools:context=".FazCadastro"
     tools:layout_editor_absoluteY="25dp">
 
     <include
         android:id="@+id/app_bar"
-        layout="@layout/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        layout="@layout/app_bar" />
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="444dp"
         android:layout_height="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/shadow_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backToCadastro">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075">
 
     </FrameLayout>
 
@@ -64,7 +60,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <EditText
         android:id="@+id/tf_nome"
@@ -85,7 +81,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291" />
+        app:layout_constraintVertical_bias="0.226" />
 
     <EditText
         android:id="@+id/tf_cpf"
@@ -103,10 +99,10 @@
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.322" />
 
     <EditText
         android:id="@+id/tf_email"
@@ -128,7 +124,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.649" />
+        app:layout_constraintVertical_bias="0.667" />
 
     <EditText
         android:id="@+id/tf_senha"
@@ -150,7 +146,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.745" />
 
     <EditText
         android:id="@+id/tf_confirmaSenha"
@@ -171,26 +167,23 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.817" />
 
     <Spinner
         android:id="@+id/selecionar_municipio"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="32dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="292dp"
         android:background="@drawable/spinner_layout_municipios"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/finalizar"
@@ -216,14 +209,16 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="23dp"
+        android:layout_marginTop="12dp"
         android:text="Selecione o Municipio"
         android:textColor="@color/corPadrao"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/selecionar_municipio"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tf_cpf" />
+        app:layout_constraintTop_toBottomOf="@+id/tf_cpf"
+        app:layout_constraintVertical_bias="0.342" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -236,6 +231,34 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tf_confirmaSenha"
         app:layout_constraintTop_toBottomOf="@+id/tf_confirmaSenha" />
+
+    <TextView
+        android:id="@+id/tf_escola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione a Escola"
+        android:textColor="@color/corPadrao"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/selecionar_escola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selecionar_municipio" />
+
+    <Spinner
+        android:id="@+id/selecionar_escola"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/spinner_layout_municipios"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tf_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_escola" />
 
 
 </android.support.constraint.ConstraintLayout>
